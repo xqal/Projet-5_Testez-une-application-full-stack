@@ -33,7 +33,7 @@ public class TeacherControllerIT {
     private TeacherRepository teacherRepository;
 
     
-    // -- GET BY ID
+    // GET BY ID
     @Test
     @WithMockUser(username = "teacher@get.com")
     public void findById_ReturnTeacher() throws Exception {
@@ -59,7 +59,7 @@ public class TeacherControllerIT {
             .andExpect(status().isNotFound());
     }
     
-    // -- GET ALL
+    // GET ALL
     @Test
     @WithMockUser
     public void findAll_ReturnAllTeachers() throws Exception {

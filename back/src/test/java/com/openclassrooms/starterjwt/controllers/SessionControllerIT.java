@@ -53,7 +53,7 @@ public class SessionControllerIT {
     @Autowired
     private UserRepository userRepository;
 
-    // -- GET SESSION BY ID
+    // GET SESSION BY ID
     @Test
     @WithMockUser
     public void findById_ReturnSession() throws Exception {
@@ -86,7 +86,7 @@ public class SessionControllerIT {
             .andExpect(status().isNotFound());
     }
 
-    // -- GET ALL SESSIONS
+    // GET ALL SESSIONS
     @Test
     @WithMockUser
     public void findAll_ReturnAllSessions() throws Exception {

@@ -112,7 +112,10 @@
 				<configuration>
 					<excludes>
 						<exclude>**/dto/**</exclude>
-						<exclude>**/payload/**</exclude>
+						<exclude>**/payload/request/**</exclude>
+						<exclude>**/payload/response/**</exclude>
+						<exclude>**/models/**</exclude>
+						<exclude>**/mapper/**</exclude>
 					</excludes>
 				</configuration>
 				<executions>

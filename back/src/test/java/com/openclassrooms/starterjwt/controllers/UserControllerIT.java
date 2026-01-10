@@ -33,7 +33,7 @@ public class UserControllerIT {
     @Autowired
     private UserRepository userRepository;
 
-    // -- GET FIND BY ID
+    // GET FIND BY ID
     @Test
     @WithMockUser(username = "user@user.com")
     public void findById_ReturnUser() throws Exception {
@@ -65,7 +65,7 @@ public class UserControllerIT {
     }
 
 
-    // -- DELETE
+    // DELETE
     @Test
     @WithMockUser(username = "test@delete.com")
     public void delete_DeleteUser() throws Exception {
