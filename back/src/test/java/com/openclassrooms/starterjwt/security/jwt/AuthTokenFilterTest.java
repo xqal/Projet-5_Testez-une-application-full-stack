@@ -59,7 +59,7 @@ public class AuthTokenFilterTest {
         when(jwtUtils.getUserNameFromJwtToken(jwt)).thenReturn(userDetails.getUsername());
         when(userDetailsService.loadUserByUsername(userDetails.getUsername())).thenReturn(userDetails);
     
-            ReflectionTestUtils.invokeMethod(authTokenFilter, "doFilterInternal", request, response, filterChain);
+        ReflectionTestUtils.invokeMethod(authTokenFilter, "doFilterInternal", request, response, filterChain);
 
 
         verify(filterChain, times(1)).doFilter(request, response);

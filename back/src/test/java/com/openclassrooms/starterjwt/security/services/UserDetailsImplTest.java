@@ -8,7 +8,7 @@ public class UserDetailsImplTest {
 
     @Test
     public void testUserDetailsProperties() {
-        // GIVEN
+        // ARRANGE
         UserDetailsImpl user = UserDetailsImpl.builder()
                 .id(1L)
                 .build();
